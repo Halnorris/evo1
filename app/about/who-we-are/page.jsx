@@ -40,7 +40,7 @@ export default function WhoWeArePage() {
             sizes="(min-width: 1200px) 1160px, 100vw"
           />
           <h2 className="mt-4">Board</h2>
-          <div className="grid-3 mt-2">
+          <div className="grid-3 mt-2 grid-2-mobile">
             {board.map((p) => (
               <div className="card card--grey" key={p.name}>
                 <h3 className="mb-0">{p.name}</h3>

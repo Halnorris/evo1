@@ -5,7 +5,6 @@ import PhoneStepStrip from '@/components/PhoneStepStrip';
 import FullJourney from '@/components/FullJourney';
 import ComparisonTable from '@/components/ComparisonTable';
 import VimeoFacade from '@/components/VimeoFacade';
-import Photo from '@/components/Photo';
 import Tbc from '@/components/Tbc';
 import ClosingCta from '@/components/ClosingCta';
 import { explainerVideo } from '@/data/testimonials';
@@ -66,29 +65,18 @@ export default function HowItWorksPage() {
 
       <section className="section" aria-labelledby="journey-title">
         <div className="container">
-          <div className="split split--top">
-            <div>
-              <p className="eyebrow">The full journey</p>
-              <h2 id="journey-title">From the first report to the landlord&apos;s dashboard.</h2>
-              <p className="lead">Every step is recorded as it happens, so there is a clear record of the work.</p>
-              <div className="mt-3 hide-mobile">
-                <Photo
-                  src="/images/photos/evo-operative-radiator-repair.webp"
-                  alt="An EVO operative repairing a radiator"
-                  caption="An EVO operative at work."
-                  width={1074}
-                  height={807}
-                />
-              </div>
-            </div>
-            <FullJourney />
+          <div className="section-head">
+            <p className="eyebrow">The full journey</p>
+            <h2 id="journey-title">From the first report to the landlord&apos;s dashboard.</h2>
+            <p className="lead">Every step is recorded as it happens, so there is a clear record of the work.</p>
           </div>
+          <FullJourney twoColumn />
         </div>
       </section>
 
       <section className="section section--grey" aria-label="Who does the work">
         <div className="container">
-          <div className="grid-2">
+          <div className="grid-2 swipe-mobile">
             <div className="card card--shadow">
               <h2 style={{ fontSize: '1.4rem' }}>Who does the work</h2>
               <p className="mb-0">
@@ -119,7 +107,7 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <ComparisonTable />
-          <div className="grid-4 mt-3">
+          <div className="grid-4 mt-3 swipe-mobile">
             {fourPoints.map((p) => (
               <div key={p.title}>
                 <h3 style={{ fontSize: '1.1rem' }}>{p.title}</h3>

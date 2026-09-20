@@ -23,7 +23,7 @@ export default function InsightsList({ articles, tags }) {
           </li>
         ))}
       </ul>
-      <div className="grid-3">
+      <div className="grid-3 insights-list">
         {shown.map((a) => (
           <InsightCard key={a.slug} a={a} />
         ))}

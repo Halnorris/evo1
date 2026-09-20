@@ -23,7 +23,7 @@ export default function TrustPage() {
       <TrustBands />
       <section className="section section--grey" aria-label="Testimonials">
         <div className="container">
-          <div className="grid-2">
+          <div className="grid-2 swipe-mobile">
             <Quote t={testimonials.richardSmith} card />
             <Quote t={testimonials.michaelWestbrook} card />
           </div>

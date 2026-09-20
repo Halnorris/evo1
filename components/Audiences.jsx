@@ -57,7 +57,7 @@ export const audiences = [
 
 export default function Audiences() {
   return (
-    <div className="grid-3">
+    <div className="grid-3 swipe-mobile">
       {audiences.map((a) => (
         <article className="card card--shadow" key={a.id} style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ height: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>

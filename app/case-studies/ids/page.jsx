@@ -105,7 +105,7 @@ export default function IdsPage() {
             <p className="eyebrow">Eighteen months later</p>
             <h2 id="results-title">What changed since using EVO.</h2>
           </div>
-          <div className="grid-3">
+          <div className="grid-3 grid-2-mobile">
             <div className="tile">
               <span className="stat">Halved</span>
               <span className="stat-label">Repair resolution times</span>
@@ -127,7 +127,7 @@ export default function IdsPage() {
 
       <section className="section section--grey" aria-label="What IDS says">
         <div className="container">
-          <div className="grid-2">
+          <div className="grid-2 swipe-mobile">
             <Quote t={testimonials.garethBrown} card />
             <Quote t={testimonials.rebeccaJoseph} card />
           </div>

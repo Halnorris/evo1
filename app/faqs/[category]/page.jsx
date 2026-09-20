@@ -46,7 +46,7 @@ export default async function FaqPage({ params }) {
       <section className="section">
         <div className="container">
           <div className="split split--top split--wide-right">
-            <nav aria-label="FAQ categories">
+            <nav aria-label="FAQ categories" className="faq-nav">
               <ul className="tag-list" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
                 {faqCategories.map((c) => (
                   <li key={c.slug}>

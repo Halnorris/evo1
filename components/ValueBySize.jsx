@@ -33,7 +33,7 @@ export default function ValueBySize() {
               several budgets.
             </p>
           </div>
-          <div className="grid-3">
+          <div className="grid-3 swipe-mobile">
             {sizes.map((s) => (
               <div className="tile" key={s.size}>
                 <p className="eyebrow">{s.size}</p>

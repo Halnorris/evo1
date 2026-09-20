@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-logos">
-          <LogoStrip logos={[...frameworkLogos, ...accreditationLogos]} color label="Frameworks and accreditations" />
+          <LogoStrip logos={[...frameworkLogos, ...accreditationLogos]} color label="Frameworks and accreditations" swipe />
         </div>
 
         <div className="footer-bottom">

@@ -33,7 +33,7 @@ export default function LettingAgentsPage() {
 
       <section className="section" aria-label="How EVO helps letting agents">
         <div className="container">
-          <div className="grid-3">
+          <div className="grid-3 swipe-mobile">
             <div className="card card--grey">
               <h2 style={{ fontSize: '1.3rem' }}>Every request logged</h2>
               <p>

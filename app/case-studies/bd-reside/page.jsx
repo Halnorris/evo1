@@ -27,7 +27,7 @@ export default function BdResidePage() {
           <h2 id="bd-results" className="visually-hidden">
             Results
           </h2>
-          <div className="grid-4">
+          <div className="grid-4 grid-2-mobile">
             <div className="tile">
               <span className="stat">96%</span>
               <span className="stat-label">First-time fix in the pilot</span>

@@ -35,7 +35,7 @@ export default function LandlordsPage() {
 
       <section className="section" aria-label="What you get">
         <div className="container">
-          <div className="grid-3">
+          <div className="grid-3 swipe-mobile">
             <div className="card card--grey">
               <h2 style={{ fontSize: '1.3rem' }}>Complete visibility</h2>
               <p>
@@ -74,7 +74,7 @@ export default function LandlordsPage() {
             <p className="eyebrow">What landlords say</p>
             <h2 id="landlord-quotes">From landlords and property managers who use EVO.</h2>
           </div>
-          <div className="grid-3">
+          <div className="grid-3 swipe-mobile">
             {landlordTestimonials.map((t) => (
               <Quote key={t.name} t={t} card />
             ))}

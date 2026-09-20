@@ -2797,3 +2797,176 @@ textarea {
     justify-content: flex-start !important;
   }
 }
+
+/* ---------- Site-wide compaction ---------- */
+
+/* Page headers */
+.page-hero {
+  padding: clamp(28px, 4.5vw, 64px) 0 clamp(26px, 3.5vw, 44px);
+}
+.breadcrumbs {
+  margin-bottom: 12px;
+}
+.page-hero .btn-row {
+  margin-top: 18px;
+}
+
+/* Stat tiles two-up on phones */
+@media (max-width: 719px) {
+  .grid-2-mobile {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px;
+  }
+  .grid-2-mobile .tile,
+  .grid-2-mobile .card {
+    padding: 16px;
+  }
+  .grid-2-mobile .stat {
+    font-size: 1.6rem;
+  }
+  .grid-2-mobile .stat-label {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Tighter cards and tiles on phones */
+@media (max-width: 719px) {
+  .card,
+  .tile,
+  .step-card,
+  .cta-option {
+    padding: 18px;
+  }
+  .split {
+    gap: 24px;
+  }
+  .vtimeline li {
+    padding-bottom: 18px;
+  }
+  .phone-steps img {
+    max-width: 130px;
+  }
+  .phone-steps {
+    gap: 18px 12px;
+  }
+  .guide-steps li {
+    grid-template-columns: 92px 1fr;
+    gap: 14px;
+    padding: 14px;
+  }
+  .guide-steps {
+    gap: 14px;
+  }
+}
+
+/* Insights list: compact image-left rows on phones */
+@media (max-width: 719px) {
+  .insights-list {
+    gap: 12px;
+  }
+  .insights-list .insight-card {
+    flex-direction: row;
+  }
+  .insights-list .insight-card__img {
+    flex: 0 0 110px;
+    aspect-ratio: auto;
+    min-height: 110px;
+  }
+  .insights-list .insight-card__body {
+    padding: 12px 14px;
+    gap: 4px;
+  }
+  .insights-list .insight-card h3 {
+    font-size: 0.98rem;
+  }
+  .insights-list .insight-card p {
+    display: none;
+  }
+  .insights-list .insight-card__img img.mark {
+    width: 30px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* FAQ category menu scrolls sideways on phones */
+@media (max-width: 899px) {
+  .faq-nav .tag-list {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 calc(var(--gutter) * -1);
+    padding: 2px var(--gutter) 8px;
+  }
+  .faq-nav .tag {
+    white-space: nowrap;
+  }
+}
+
+/* Footer */
+.site-footer {
+  padding: clamp(40px, 5vw, 56px) 0 24px;
+}
+.footer-top {
+  gap: 28px;
+}
+.footer-awards {
+  margin-top: 28px;
+  padding-top: 20px;
+}
+.footer-logos {
+  margin-top: 20px;
+  padding: 12px 16px;
+}
+.footer-bottom {
+  margin-top: 20px;
+}
+@media (max-width: 719px) {
+  .footer-cols {
+    gap: 20px;
+  }
+  .footer-cols li {
+    margin-bottom: 6px;
+  }
+  .footer-awards a {
+    padding: 10px 12px;
+  }
+}
+
+/* Keep visually-hidden text inside scrolling containers from widening the page */
+.table-wrap,
+.swipe-mobile,
+.price-table-wrap {
+  position: relative;
+}
+
+/* Two-column process timeline on wider screens */
+@media (min-width: 900px) {
+  .vtimeline--2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    column-gap: 48px;
+  }
+  .vtimeline--2col::before {
+    display: none;
+  }
+  .vtimeline--2col li {
+    padding-bottom: 18px;
+  }
+}
+
+/* Timescales as compact full-width rows */
+.timescales--wide {
+  gap: 8px;
+}
+.timescales--wide li {
+  padding: 12px 18px;
+}
+@media (min-width: 760px) {
+  .timescales--wide li {
+    grid-template-columns: 170px 280px 1fr;
+  }
+}

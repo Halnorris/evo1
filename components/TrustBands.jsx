@@ -13,7 +13,7 @@ export default function TrustBands({ showAwards = true }) {
             Clients we work with
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={clientLogos} label="Clients" />
+            <LogoStrip logos={clientLogos} label="Clients" swipe />
           </div>
         </div>
       </section>
@@ -23,7 +23,7 @@ export default function TrustBands({ showAwards = true }) {
             Frameworks
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={frameworkLogos} color label="Frameworks" />
+            <LogoStrip logos={frameworkLogos} color label="Frameworks" swipe />
           </div>
         </div>
       </section>
@@ -33,10 +33,10 @@ export default function TrustBands({ showAwards = true }) {
             Accreditations and awards
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={accreditationLogos} color label="Accreditations" />
+            <LogoStrip logos={accreditationLogos} color label="Accreditations" swipe />
           </div>
           {showAwards && (
-            <div className="grid-2 mt-3">
+            <div className="grid-2 mt-3 swipe-mobile">
               {awards.map((a) => (
                 <Link key={a.id} href={a.href} className="card card-link">
                   <span className="eyebrow">Award, with {a.client}</span>

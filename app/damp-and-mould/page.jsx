@@ -85,35 +85,31 @@ export default function DampAndMouldPage() {
       {/* DM-02 */}
       <section className="section" aria-labelledby="why-title">
         <div className="container">
-          <div className="split split--top">
-            <div>
-              <p className="eyebrow">Why it matters now</p>
-              <h2 id="why-title">Awaab&apos;s Law sets fixed timescales.</h2>
-              <p className="lead">
-                Awaab&apos;s Law sets fixed timescales for social landlords to investigate and fix hazards. It has applied to damp and
-                mould and to emergency hazards since 27 October 2025. From 30 November 2026 it extends to further hazards including
-                excess cold and heat, falls, fire, electrical and structural hazards. The government plans to extend it to the
-                remaining hazards in 2027.
-              </p>
-            </div>
-            <div>
-              <h3>The timescales</h3>
-              <ul className="timescales">
-                {timescales.map((t, i) => (
-                  <li key={i} className={t.hazard === 'Emergency' ? 'emergency' : ''}>
-                    <span className="hazard">{t.hazard} hazard</span>
-                    <span className="what">{t.what}</span>
-                    <span className="when">{t.when}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="source">
-                Source: MHCLG, Awaab&apos;s Law: guidance for social landlords. <Tbc>re-check timescales against the guidance on launch day</Tbc>
-              </p>
-              <div className="callout mt-2">
-                <p>The legal duty stays with the landlord. EVO&apos;s job is to help you meet the timescales and hold the evidence that you did.</p>
-              </div>
-            </div>
+          <div className="section-head" style={{ maxWidth: 860 }}>
+            <p className="eyebrow">Why it matters now</p>
+            <h2 id="why-title">Awaab&apos;s Law sets fixed timescales.</h2>
+            <p className="lead">
+              Awaab&apos;s Law sets fixed timescales for social landlords to investigate and fix hazards. It has applied to damp and
+              mould and to emergency hazards since 27 October 2025. From 30 November 2026 it extends to further hazards including
+              excess cold and heat, falls, fire, electrical and structural hazards. The government plans to extend it to the
+              remaining hazards in 2027.
+            </p>
+          </div>
+          <h3>The timescales</h3>
+          <ul className="timescales timescales--wide">
+            {timescales.map((t, i) => (
+              <li key={i} className={t.hazard === 'Emergency' ? 'emergency' : ''}>
+                <span className="hazard">{t.hazard} hazard</span>
+                <span className="what">{t.what}</span>
+                <span className="when">{t.when}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="source">
+            Source: MHCLG, Awaab&apos;s Law: guidance for social landlords. <Tbc>re-check timescales against the guidance on launch day</Tbc>
+          </p>
+          <div className="callout mt-2">
+            <p>The legal duty stays with the landlord. EVO&apos;s job is to help you meet the timescales and hold the evidence that you did.</p>
           </div>
         </div>
       </section>
@@ -125,7 +121,7 @@ export default function DampAndMouldPage() {
             <p className="eyebrow">Our process</p>
             <h2 id="how-title">How we handle every case</h2>
           </div>
-          <ol className="steps-row steps-row--4">
+          <ol className="steps-row steps-row--4 swipe-mobile">
             {steps.map((s, i) => (
               <li className="step-card" key={s.title}>
                 <span className="num" aria-hidden="true">
@@ -146,7 +142,7 @@ export default function DampAndMouldPage() {
             <p className="eyebrow">Step 3 in detail</p>
             <h2 id="treat-title">The three-stage treatment</h2>
           </div>
-          <ol className="steps-row steps-row--3">
+          <ol className="steps-row steps-row--3 swipe-mobile">
             {treatment.map((s, i) => (
               <li className="step-card" key={s.title}>
                 <span className="num" aria-hidden="true">
@@ -173,7 +169,7 @@ export default function DampAndMouldPage() {
             <p className="eyebrow">What we measure</p>
             <h2 id="measure-title">Our service targets</h2>
           </div>
-          <div className="grid-3">
+          <div className="grid-3 swipe-mobile">
             {kpis.map((k, i) => (
               <div className="tile" key={i}>
                 <span className="stat">{k.value}</span>

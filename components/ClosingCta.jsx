@@ -27,7 +27,7 @@ export default function ClosingCta() {
           <p className="eyebrow">Get in touch</p>
           <h2 id="closing-title">Let&apos;s look at your portfolio.</h2>
         </div>
-        <div className="cta-options">
+        <div className="cta-options swipe-mobile">
           {options.map((o, i) => (
             <div className="cta-option" key={o.title}>
               <h3>{o.title}</h3>
