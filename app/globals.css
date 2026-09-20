@@ -2970,3 +2970,8 @@ textarea {
     grid-template-columns: 170px 280px 1fr;
   }
 }
+
+/* Team photo banner: trim the empty wall above, keep the front row's faces */
+.photo--banner img {
+  object-position: center 100%;
+}
