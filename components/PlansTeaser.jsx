@@ -16,9 +16,9 @@ export default function PlansTeaser({ type, grey = true, headline = 'One fixed p
             repair value threshold.
           </p>
         </div>
-        <div className="plan-cards">
+        <div className="plan-cards swipe-mobile">
           {plans.map((p) => (
-            <div className="plan-card" key={p.id}>
+            <div className="plan-card plan-card--compact" key={p.id}>
               <span className="plan-card__tag">{p.tag}</span>
               <h3>{p.name}</h3>
               <div className="threshold-figure">

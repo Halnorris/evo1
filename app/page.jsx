@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Figures from '@/components/Figures';
+import Laptop from '@/components/Laptop';
 import VideoTestimonials from '@/components/VideoTestimonials';
 import LogoStrip from '@/components/LogoStrip';
 import ProblemSection from '@/components/ProblemSection';
@@ -62,15 +63,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="home-hero__visual" aria-hidden="true">
-            <Image
-              className="home-hero__laptop"
-              src="/images/app/evo-dashboard-laptop.webp"
-              alt=""
-              width={562}
-              height={430}
-              priority
-              sizes="(min-width: 960px) 520px, 88vw"
-            />
+            <Laptop alt="" priority sizes="(min-width: 960px) 470px, 80vw" />
             <Image
               className="home-hero__phone"
               src="/images/app/living-app-home-framed.webp"
@@ -97,7 +90,7 @@ export default function HomePage() {
             Trusted by housing providers across London
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={clientLogos} label="Clients" />
+            <LogoStrip logos={clientLogos} label="Clients" swipe />
           </div>
         </div>
       </section>
@@ -111,7 +104,7 @@ export default function HomePage() {
       <SolutionSection />
 
       {/* HOME-07 Founder quote */}
-      <section className="section section--grey" aria-label="From our co-founder">
+      <section className="section section--tight section--grey" aria-label="From our co-founder">
         <div className="container">
           <div className="founder">
             <Tbc block>Mark Iandoli portrait</Tbc>
@@ -148,26 +141,21 @@ export default function HomePage() {
       {/* HOME-10 Pilot */}
       <PilotSection />
 
-      {/* HOME-11 Who we help */}
+      {/* HOME-11 Who we help, and HOME-12 Frameworks and accreditations in the same band */}
       <section className="section section--grey" aria-labelledby="who-title">
         <div className="container">
           <div className="section-head">
             <h2 id="who-title">Who we help</h2>
           </div>
           <SectorTiles />
-        </div>
-      </section>
-
-      {/* HOME-12 Frameworks and accreditations */}
-      <section className="section section--tight" aria-labelledby="frameworks-title">
-        <div className="container">
-          <h2 id="frameworks-title" className="center" style={{ fontSize: '1.4rem' }}>
+          <hr className="band-divider" />
+          <h2 id="frameworks-title" className="center" style={{ fontSize: '1.3rem' }}>
             Frameworks and accreditations
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={[...frameworkLogos, ...accreditationLogos]} color label="Frameworks and accreditations" />
+            <LogoStrip logos={[...frameworkLogos, ...accreditationLogos]} color label="Frameworks and accreditations" swipe />
           </div>
-          <p className="center mt-2">
+          <p className="center mt-2 mb-0">
             <Link href="/about/trust" className="text-link">
               Clients, frameworks and accreditations
             </Link>
@@ -176,7 +164,7 @@ export default function HomePage() {
       </section>
 
       {/* HOME-13 Insights */}
-      <LatestInsights grey />
+      <LatestInsights />
 
       {/* HOME-14 Closing CTA */}
       <ClosingCta />

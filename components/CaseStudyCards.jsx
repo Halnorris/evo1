@@ -25,7 +25,7 @@ export const caseStudies = [
 export default function CaseStudyCards({ lead = 'ids' }) {
   const ordered = lead === 'bd-reside' ? [...caseStudies].reverse() : caseStudies;
   return (
-    <div className="grid-2">
+    <div className="grid-2 swipe-mobile">
       {ordered.map((c) => (
         <Link key={c.id} href={c.href} className="card card-link card--shadow">
           <span className="eyebrow">Case study</span>

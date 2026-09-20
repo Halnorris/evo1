@@ -39,7 +39,7 @@ export default function SolutionSection({ showPhoto = true }) {
                 team and our approved contractor network. We are not a software company.
               </p>
               {showPhoto && (
-                <div className="mt-2">
+                <div className="mt-2 photo--banner">
                   <Photo
                     src="/images/photos/evo-operations-team.webp"
                     alt="The EVO operations team standing together in the office, wearing EVO t-shirts"

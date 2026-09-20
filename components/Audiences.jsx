@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Laptop from './Laptop';
 
 // Brief 6.6: three blocks, labels in one colour.
 export const audiences = [
@@ -32,10 +33,8 @@ export const audiences = [
       'Asset data and enriched property records',
       'Digital billing and audit trail',
     ],
-    img: '/images/app/evo-dashboard-laptop.webp',
-    w: 562,
-    h: 430,
-    alt: 'EVO Dashboard on a laptop showing a property record with details, map and attributes',
+    laptop: true,
+    alt: 'The EVO Dashboard showing a property record with details, location map and property attributes',
   },
   {
     id: 'trades',
@@ -62,7 +61,13 @@ export default function Audiences() {
       {audiences.map((a) => (
         <article className="card card--shadow" key={a.id} style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ height: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
-            <Image src={a.img} alt={a.alt} width={a.w} height={a.h} style={{ maxHeight: 220, width: 'auto' }} sizes="(min-width: 1000px) 30vw, 60vw" />
+            {a.laptop ? (
+              <div style={{ width: '100%', maxWidth: 300 }}>
+                <Laptop alt={a.alt} sizes="300px" />
+              </div>
+            ) : (
+              <Image src={a.img} alt={a.alt} width={a.w} height={a.h} style={{ maxHeight: 220, width: 'auto' }} sizes="(min-width: 1000px) 30vw, 60vw" />
+            )}
           </div>
           <p className="eyebrow">{a.label}</p>
           <h3>{a.product}</h3>

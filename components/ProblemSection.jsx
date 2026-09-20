@@ -43,7 +43,7 @@ export default function ProblemSection() {
             small team holding it together. What has changed is everything around it.
           </p>
         </div>
-        <div className="grid-3">
+        <div className="grid-3 swipe-mobile">
           {context.map((c) => (
             <div className="tile" key={c.label}>
               <span className="stat stat--orange">{c.value}</span>

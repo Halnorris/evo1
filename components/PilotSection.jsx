@@ -11,8 +11,8 @@ export default function PilotSection({ grey = false }) {
           <h2 id="pilot-title">Try EVO before you commit.</h2>
           <p className="lead">See it working on your own homes, with your own residents and your own numbers.</p>
         </div>
-        <div className="grid-2">
-          <div className="card card--shadow">
+        <div className="card card--shadow pilot-card">
+          <div>
             <h3>How it works</h3>
             <ul className="tick-list">
               <li>12 months, on homes you choose</li>
@@ -22,7 +22,7 @@ export default function PilotSection({ grey = false }) {
               <li>At the end of the 12 months, you decide whether to widen it</li>
             </ul>
           </div>
-          <div className="card card--shadow">
+          <div>
             <h3>What you come away with</h3>
             <ul className="tick-list">
               <li>Real performance data from your own homes</li>

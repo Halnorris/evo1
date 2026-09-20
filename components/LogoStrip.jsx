@@ -1,9 +1,9 @@
 import Tbc from './Tbc';
 
-export default function LogoStrip({ logos, color = false, label }) {
+export default function LogoStrip({ logos, color = false, label, swipe = false }) {
   const visible = logos.filter((l) => l.show !== false);
   return (
-    <ul className={`logo-strip ${color ? 'logo-strip--color' : ''}`} aria-label={label}>
+    <ul className={`logo-strip ${color ? 'logo-strip--color' : ''} ${swipe ? 'swipe-mobile' : ''}`} aria-label={label}>
       {visible.map((l) => (
         <li key={l.name}>
           {l.src ? (

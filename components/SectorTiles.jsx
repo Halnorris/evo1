@@ -21,7 +21,7 @@ export const sectors = [
 
 export default function SectorTiles() {
   return (
-    <div className="sector-tiles">
+    <div className="sector-tiles swipe-mobile">
       {sectors.map((s) => (
         <Link key={s.href} href={s.href} className="sector-tile">
           <h3>{s.title}</h3>

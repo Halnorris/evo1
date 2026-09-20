@@ -21,7 +21,7 @@ export default function LatestInsights({ tag, title = 'Latest insights', grey = 
             All insights
           </Link>
         </div>
-        <div className="grid-3">
+        <div className="grid-3 swipe-mobile">
           {list.map((a) => (
             <InsightCard key={a.slug} a={a} />
           ))}
