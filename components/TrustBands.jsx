@@ -13,7 +13,7 @@ export default function TrustBands({ showAwards = true }) {
             Clients we work with
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={clientLogos} label="Clients" swipe />
+            <LogoStrip logos={clientLogos} label="Clients" row />
           </div>
         </div>
       </section>

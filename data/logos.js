@@ -10,8 +10,8 @@ export const clientLogos = [
   { name: 'Soho Housing', src: null, tbc: 'clean logo file to follow' },
   { name: 'LRM', src: null, tbc: 'clean logo file to follow' },
   { name: 'British Land', src: '/images/logos/clients/british-land.png', width: 189, height: 95 },
-  { name: 'Capital Letters', src: '/images/logos/clients/capital-letters.png', width: 320, height: 200 },
-  { name: 'Resonance', src: '/images/logos/clients/resonance.png', width: 320, height: 200 },
+  { name: 'Capital Letters', src: '/images/logos/clients/capital-letters.png', width: 247, height: 164 },
+  { name: 'Resonance', src: '/images/logos/clients/resonance.png', width: 320, height: 133 },
   // The Storm logo has been removed on purpose (brief HOME-04). Do not add it back.
 ];
 

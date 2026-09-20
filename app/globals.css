@@ -2975,3 +2975,41 @@ textarea {
 .photo--banner img {
   object-position: center 100%;
 }
+
+/* Client logos: one tidy row, scrolls sideways if they don't all fit */
+.logo-strip--row {
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  overflow-x: auto;
+  gap: 24px;
+  padding: 6px 4px 12px;
+  scrollbar-width: thin;
+  position: relative;
+}
+.logo-strip--row > li {
+  flex: 0 0 auto;
+  height: 64px;
+}
+/* Centre the row when everything fits, scroll from the left when it doesn't */
+.logo-strip--row > li:first-child {
+  margin-left: auto;
+}
+.logo-strip--row > li:last-child {
+  margin-right: auto;
+}
+.logo-strip--row img {
+  max-height: 52px;
+  max-width: 140px;
+}
+@media (max-width: 719px) {
+  .logo-strip--row {
+    gap: 28px;
+    margin: 0 calc(var(--gutter) * -1);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+  .logo-strip--row img {
+    max-height: 44px;
+    max-width: 120px;
+  }
+}

@@ -90,7 +90,7 @@ export default function HomePage() {
             Trusted by housing providers across London
           </h2>
           <div className="mt-2">
-            <LogoStrip logos={clientLogos} label="Clients" swipe />
+            <LogoStrip logos={clientLogos} label="Clients" row />
           </div>
         </div>
       </section>
