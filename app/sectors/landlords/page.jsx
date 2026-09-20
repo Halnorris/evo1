@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import Quote from '@/components/Quote';
-import Tbc from '@/components/Tbc';
 import ClosingCta from '@/components/ClosingCta';
 import { landlordTestimonials } from '@/data/testimonials';
 import { getOrgType, formatPrice, combinedPrice } from '@/data/plans';
@@ -90,10 +89,12 @@ export default function LandlordsPage() {
             <div>
               <p className="eyebrow">Free guide</p>
               <h2 id="rra-title">The Landlords Guide to the Renters Rights Act.</h2>
-              <p>Download our free guide to what the Renters Rights Act means for you and how to prepare.</p>
+              <p>Sign up to our mailing list for industry news and legislative changes, and get a free copy of our guide.</p>
             </div>
             <div>
-              <Tbc>guide sign-up form or link (moved from the site-wide banner)</Tbc>
+              <Link href="/renters-rights-guide" className="btn btn-primary">
+                Get the free guide
+              </Link>
               <p className="mt-2">
                 <Link href="/insights/the-renters-rights-act-what-uk-landlords-need-to-know-and-how-to-prepare" className="text-link">
                   Read: The Renters Rights Act, what UK landlords need to know

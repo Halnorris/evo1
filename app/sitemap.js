@@ -32,6 +32,7 @@ const staticRoutes = [
   '/how-to-guides/using-the-evo-living-app',
   '/how-to-guides/reporting-an-emergency',
   '/contact',
+  '/renters-rights-guide',
   '/partners',
   '/careers',
   '/investors',

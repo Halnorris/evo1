@@ -79,11 +79,16 @@ export default async function FaqPage({ params }) {
                             <Tbc>{f.tbc}</Tbc>
                           </p>
                         )}
-                        {f.link && (
-                          <Link href={f.link.href} className="text-link">
-                            {f.link.label}
-                          </Link>
-                        )}
+                        {f.link &&
+                          (f.link.external ? (
+                            <a href={f.link.href} className="text-link" target="_blank" rel="noopener noreferrer">
+                              {f.link.label} (opens in a new tab)
+                            </a>
+                          ) : (
+                            <Link href={f.link.href} className="text-link">
+                              {f.link.label}
+                            </Link>
+                          ))}
                       </div>
                     </details>
                   ))}

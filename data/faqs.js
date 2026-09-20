@@ -1,5 +1,8 @@
 // FAQs. Answers can contain a `tbc` note, which shows as a TBC tag while SHOW_TBC is on.
 import { pricingFaqs } from './plans';
+import { apps } from './site';
+
+const REGISTRATION_URL = apps.living.registration;
 
 export const faqCategories = [
   { slug: 'residents', label: 'Residents' },
@@ -14,8 +17,8 @@ export const faqs = {
   residents: [
     {
       q: 'How do I register for the EVO Living App?',
-      a: 'Your landlord or managing agent works with EVO to look after repairs in your home, so you should already be registered with us. If you have not received your login details, contact the EVO helpdesk.',
-      tbc: 'link to the online registration form on the current site',
+      a: 'Your landlord or managing agent works with EVO to look after repairs in your home, so you should already be registered with us. If you have not, fill in our online registration form.',
+      link: { href: REGISTRATION_URL, label: 'Register for the EVO Living App', external: true },
     },
     {
       q: 'How do I report a repair?',

@@ -33,7 +33,9 @@ For EVO, as asked for in section 10 of the brief.
 - /faqs: resident FAQs updated (damp and mould question added); landlord FAQs now "Landlords and property managers" with the pricing FAQs and no plan-tier references.
 - /about/trust: new. /contact: new "What would you like?" field, new sector options, "How you found EVO" optional, hidden plan-explorer fields, Mark Iandoli's contact block.
 - /products pages: aligned to the How it works copy, "#HassleFree" and protection plans removed, "12-month warranty on every job".
-- Insights: "Damp and mould" tag added.
+- Insights: "Damp and mould" tag added. Article cover images added.
+- New /renters-rights-guide mailing list sign-up page (replaces /download-sign-up, which redirects), linked from the landlords page.
+- Resident registration form linked from the resident FAQs and the residents hub.
 
 ## Open items (shown as TBC tags on the site)
 
@@ -54,12 +56,11 @@ For EVO, as asked for in section 10 of the brief.
 | 13 | South East Consortium and Procurement for Housing: still current? | Footer, homepage, trust |
 | 14 | Updated team list, bios and photos | Who we are |
 | 15 | Registered office | Footer |
-| 16 | Clean logo files: LRM, Soho Housing, Thames Reach. Capital and Resonance files to copy from the current site. Cyber Essentials and Living Wage Employer logos | Logo strips |
+| 16 | Clean logo files: LRM, Soho Housing, Thames Reach. Cyber Essentials and Living Wage Employer logos | Logo strips |
 | 17 | Dashboard screenshots | Products, damp and mould |
 | 18 | £9bn figure in the AI insight article | Insights |
 | 19 | Individual award badges (interim combined image in use) | Homepage hero |
-| 20 | Insight article text and images, older articles, newsletters, partners, careers, investors, terms, privacy, and the other FAQ categories: to migrate from the current site | Those pages |
-| 21 | Renters' Rights Act guide sign-up form or link | Landlords page |
-| 22 | Resident registration form link | Resident FAQs |
-| 23 | Re-check the Awaab's Law timescales against the MHCLG guidance on launch day | Damp and mould page and PDF |
-| 24 | HubSpot portal and form IDs to connect the contact form | Contact |
+| 20 | Insight article text, the B&D Reside awards article image and date, older articles, newsletters, partners, careers, investors, terms, privacy, and the other FAQ categories: to migrate from the current site | Those pages |
+| 21 | Mailchimp form action URL to connect the Renters Rights guide sign-up | /renters-rights-guide |
+| 22 | Re-check the Awaab's Law timescales against the MHCLG guidance on launch day | Damp and mould page and PDF |
+| 23 | HubSpot portal and form IDs to connect the contact form | Contact |

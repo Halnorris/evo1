@@ -42,6 +42,8 @@ export const apps = {
     name: 'EVO Living App',
     appStore: 'https://apps.apple.com/gb/app/evo-living-residents-app/id1176982988',
     googlePlay: 'https://play.google.com/store/apps/details?id=com.evoai.residentapp',
+    // Resident registration form (Typeform)
+    registration: 'https://evoforms.typeform.com/to/Mzgrw4ZQ?typeform-source=evo-pm.com',
   },
   trades: {
     name: 'EVO Trades App',

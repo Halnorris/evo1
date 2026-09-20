@@ -14,6 +14,7 @@ Run locally (optional): `npm install` then `npm run dev`, and open http://localh
 
 - **TBC tags.** Anything EVO still has to confirm shows as a yellow "TBC" tag so it can be reviewed on a preview deploy. When everything is confirmed, set `SHOW_TBC = false` in `data/site.js`. Every tag then disappears. See `CHANGES-AND-TBC.md` for the full list.
 - **HubSpot.** The contact form is laid out and pre-fills from the buttons and the plan explorer, but does not send yet. To connect it, add `NEXT_PUBLIC_HUBSPOT_PORTAL_ID` and `NEXT_PUBLIC_HUBSPOT_FORM_ID` (and `NEXT_PUBLIC_HUBSPOT_REGION` if not `eu1`) in Vercel > Settings > Environment Variables, then redeploy. The HubSpot form should have hidden fields named `enquiry_type`, `organisation_type`, `plan` and `add_ons`.
+- **Mailchimp.** The Renters Rights guide sign-up at `/renters-rights-guide` is ready but not connected. Copy the form `action` URL from Mailchimp's embedded form code into `NEXT_PUBLIC_MAILCHIMP_ACTION` in Vercel, then redeploy. See the note at the top of `components/MailingListForm.jsx`.
 - **Domain.** Point evo-pm.com at Vercel (Vercel > Settings > Domains).
 
 ## Where to change things
@@ -59,6 +60,7 @@ next.config.mjs      301 redirects for moved URLs
 | /newsletters | /insights/newsletters |
 | /faqs | /faqs/residents |
 | /faqs/landlords, /faqs/property-managers | /faqs/landlords-and-property-managers |
+| /download-sign-up | /renters-rights-guide |
 
 `/how-to-guides` and `/faqs/residents` stay at the same URLs (they are linked from the app and the PDFs).
 

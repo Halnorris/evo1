@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import AppBadges from '@/components/AppBadges';
 import Tbc from '@/components/Tbc';
-import { contact } from '@/data/site';
+import { contact, apps } from '@/data/site';
 
 export const metadata = {
   title: 'Residents: report a repair | EVO',
@@ -45,6 +45,12 @@ export default function ResidentsPage() {
                 number straight away.
               </p>
               <AppBadges app="living" />
+              <p className="mt-2 mb-0">
+                Not registered yet?{' '}
+                <a href={apps.living.registration} target="_blank" rel="noopener noreferrer">
+                  Register for the EVO Living App (opens in a new tab)
+                </a>
+              </p>
             </div>
             <div className="card card--grey">
               <h2 style={{ fontSize: '1.4rem' }}>Report an emergency</h2>

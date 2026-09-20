@@ -2,7 +2,7 @@
 // The slugs match the current site so existing links keep working.
 // Article bodies still need to be migrated from the current CMS: paste each article's
 // text into `body` (an array of paragraphs, or ['## Heading', 'Paragraph', ...]) and
-// add the cover image to /public/images/insights/ and set `image`.
+// add the cover image to /public/images/insights/<slug>.webp and set `image`.
 
 export const insightTags = ['Social housing', 'Private landlords', 'EVO news', 'Damp and mould', 'Newsletters'];
 
@@ -14,7 +14,7 @@ export const insights = [
     excerpt:
       'Drought might first appear to be an environmental or water supply issue, but prolonged dry conditions can have much wider consequences for social housing.',
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/managing-the-impact-of-drought-on-social-housing.webp',
     body: null,
   },
   {
@@ -24,7 +24,7 @@ export const insights = [
     excerpt:
       'Repairs are one of the clearest tests of trust in social housing. When they are delayed or left unresolved, trust can quickly break down.',
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/repairs-culture-in-social-housing-why-2026-is-a-turning-point.webp',
     body: null,
   },
   {
@@ -33,7 +33,7 @@ export const insights = [
     date: '2026-06-22',
     excerpt: null,
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/ai-in-social-housing-delivering-efficiency-with-empathy.webp',
     body: null,
     // TBC item 18: the article quotes repairs spend of "around £9 billion". The latest figure is £10.0bn.
     tbc: 'update the £9bn figure to £10.0bn if EVO agrees',
@@ -45,7 +45,7 @@ export const insights = [
     excerpt:
       "Repairs compliance is becoming increasingly challenging to manage, not because the work isn't being done, but because it cannot always be clearly evidenced.",
     tags: ['Social housing', 'Damp and mould'],
-    image: null,
+    image: '/images/insights/how-housing-associations-can-evidence-repairs-compliance.webp',
     body: null,
   },
   {
@@ -54,7 +54,7 @@ export const insights = [
     date: '2026-03-20',
     excerpt: null,
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/reactive-vs-planned-repairs-in-social-housing-how-landlords-can-reduce-reactive-maintenance-costs.webp',
     body: null,
   },
   {
@@ -63,7 +63,7 @@ export const insights = [
     date: '2026-03-16',
     excerpt: null,
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/end-of-tenancy-cleaning-laws-uk-2026-guide-for-housing-associations.webp',
     body: null,
   },
   {
@@ -72,7 +72,7 @@ export const insights = [
     date: '2026-02-24',
     excerpt: null,
     tags: ['Social housing', 'Damp and mould'],
-    image: null,
+    image: '/images/insights/a-wetter-england-how-social-landlords-can-future-proof-properties-against-persistent-rainfall.webp',
     body: null,
   },
   {
@@ -81,7 +81,7 @@ export const insights = [
     date: '2026-02-16',
     excerpt: "The Renters Rights Act represents the most significant reform of England's private rented sector in decades.",
     tags: ['Private landlords'],
-    image: null,
+    image: '/images/insights/the-renters-rights-act-what-uk-landlords-need-to-know-and-how-to-prepare.webp',
     body: null,
   },
   {
@@ -90,7 +90,7 @@ export const insights = [
     date: '2026-01-06',
     excerpt: null,
     tags: ['EVO news', 'Social housing'],
-    image: null,
+    image: '/images/insights/ids-evo-transforming-repairs-and-maintenance-through-digital-partnership.webp',
     body: null,
   },
   {
@@ -99,7 +99,7 @@ export const insights = [
     date: '2025-10-17',
     excerpt: null,
     tags: ['EVO news'],
-    image: null,
+    image: '/images/insights/ids-and-evo-s-transformative-partnership-is-recognised-at-the-housing-executive-awards.webp',
     body: null,
   },
   {
@@ -108,7 +108,7 @@ export const insights = [
     date: '2025-10-06',
     excerpt: null,
     tags: ['Social housing'],
-    image: null,
+    image: '/images/insights/window-safety-locks-improving-safety-in-social-housing-blocks.webp',
     body: null,
   },
   {
@@ -117,7 +117,7 @@ export const insights = [
     date: '2025-08-20',
     excerpt: null,
     tags: ['Private landlords'],
-    image: null,
+    image: '/images/insights/what-is-the-meaning-of-fair-wear-and-tear.webp',
     body: null,
   },
   {

@@ -10,11 +10,8 @@ export const clientLogos = [
   { name: 'Soho Housing', src: null, tbc: 'clean logo file to follow' },
   { name: 'LRM', src: null, tbc: 'clean logo file to follow' },
   { name: 'British Land', src: '/images/logos/clients/british-land.png', width: 189, height: 95 },
-  // README3: use the files already on the current site. Download them and set src:
-  //   https://evo-pm.com/media/pftjv3d0/evo_capital_grey.png   -> /public/images/logos/clients/capital.png
-  //   https://evo-pm.com/media/qjvn1ttc/evo_resonance_grey.png -> /public/images/logos/clients/resonance.png
-  { name: 'Capital', src: null, tbc: 'copy logo file from current site' },
-  { name: 'Resonance', src: null, tbc: 'copy logo file from current site' },
+  { name: 'Capital Letters', src: '/images/logos/clients/capital-letters.png', width: 320, height: 200 },
+  { name: 'Resonance', src: '/images/logos/clients/resonance.png', width: 320, height: 200 },
   // The Storm logo has been removed on purpose (brief HOME-04). Do not add it back.
 ];
 
